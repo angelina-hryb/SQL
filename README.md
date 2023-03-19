@@ -88,7 +88,7 @@
 |7|	10|	9|
 |...|	...|	...|
   
-![image](https://user-images.githubusercontent.com/124161830/226203498-8c20ec73-578b-4668-a839-e8e3e5d747e7.png)
+![image](https://user-images.githubusercontent.com/124161830/226203752-07013280-652b-4179-aeb6-5fc1b14c1233.png)
 
 
 </details>
