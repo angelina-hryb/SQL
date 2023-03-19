@@ -47,8 +47,19 @@ values
 (1700),
 (1800),
 (2000);
+
+update salary set mounthly_salary = 5000 where id = 11;
 select * from salary
 
+delete from salary
+where id = 9;
+
+alter table roles
+add column parking int;
+
+alter table roles rename column parking to taxi;
+
+alter table roles drop column taxi
 
 insert into roles (role_title)
 values ('QA_manual_junior'),
