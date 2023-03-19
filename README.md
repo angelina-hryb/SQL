@@ -1,9 +1,8 @@
 ***SQL***✅
 <details>
 <summary>Click on HW_SQL condition 1</summary>
-1️⃣Первая часть.
-▶Таблица employees
-
+1️⃣Первая часть.  
+▶Таблица employees  
 1)	Создать таблицу employees
 - id. serial,  primary key,
 - employee_name. Varchar(50), not null
