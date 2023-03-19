@@ -1,13 +1,14 @@
 ***SQL***✅
 <details>
-<summary>Click on HW_SQL condition 1</summary>
-1️⃣Первая часть.  
-▶Таблица employees  
-1)	Создать таблицу employees
-- id. serial,  primary key,
-- employee_name. Varchar(50), not null
-2)	Наполнить таблицу employee 70 строками.
+<summary>Click on HW_SQL condition 1</summary>  
 
+1️⃣Первая часть.   
+▶Таблица employees  
+1)	Создать таблицу employees  
+- id. serial,  primary key,  
+- employee_name. Varchar(50), not null  
+2)	Наполнить таблицу employee 70 строками.  
+  
 ▶Таблица salary
 
 3)	Создать таблицу salary
