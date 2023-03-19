@@ -93,9 +93,9 @@ id	role_name
 - role_id. Int, not null (внешний ключ для таблицы roles, поле id)
 11)	Наполнить таблицу roles_employee 40 строками:
 
-id	employee_id	role_id
-- 1	7	2
-- 2	20	4
+id|employee_id|	role_id|
+- 1|7|2
+- 2|20|4
 - 3	3	9
 - 4	5	13
 - 5	23	4
