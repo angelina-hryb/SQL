@@ -76,9 +76,17 @@ where id between 180 and 190;
 -- 26. Вывести пользователей где password равен 12333, 1m313, 123313
 select * from students 
 where "password"= '12333' or "password"='1m313'or "password"='123313';
+
+select * from students 
+where "password" in ('12333','1m313','123313');
+
 -- 27. Вывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00
 select * from students 
 where created_on='2020-10-03 00:00:00' or created_on='2021-05-19 00:00:00' or created_on='2021-03-26 00:00:00';
+
+select * from students 
+where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00','2021-03-26 00:00:00');
+
 -- 28. Вывести минимальный id
 SELECT MIN(id)
 FROM students;

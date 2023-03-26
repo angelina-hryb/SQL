@@ -1,9 +1,10 @@
+--Создать таблицу employees
 CREATE table employees(
 id_1 serial primary key,
 employee_name varchar(50) not null
 );
-select * from employees;
-
+select * from employees;--71
+--Наполнить таблицу employees 70 строками.
 INSERT into employees(employee_name)
 values 
 ('Aaron'),
@@ -78,13 +79,14 @@ values
 ('Roger'),
 ('Steven');
 
-
+--Создать таблицу salary
 CREATE table salary_2(
 id_1 serial primary key,
 mounthly_salary int not null
 );
 select * from salary_2;
 
+--Наполнить таблицу salary 15 строками:
 INSERT into salary_2(mounthly_salary)
 values
 ('1000'),
@@ -103,6 +105,8 @@ values
 ('2700'),
 ('2800');
 
+--Создать таблицу employee_salary
+
 CREATE table employee_salary(
 id_1 serial primary key,
 employee_id_1 int not null unique,
@@ -110,7 +114,7 @@ salary_id_1 int not null
 );
 
 select * from employee_salary;
-
+--Наполнить таблицу employee_salary 40 строками:
 INSERT into employee_salary(employee_id_1, salary_id_1)
 values
 (1,2),
@@ -154,6 +158,7 @@ values
 (81,11),
 (82,12);
 
+--Создать таблицу roles
 CREATE table roles_1(
 id_1 serial primary key,
 role_name int not null unique
@@ -162,6 +167,7 @@ select * from roles_1;
 
 alter table roles_1 ALTER column role_name type varchar(30);
 
+--Наполнить таблицу roles 20 строками:
 INSERT into roles_1(role_name)
 values
 ('Junior Python developer'),
@@ -185,6 +191,7 @@ values
 ('Middle Automation QA engineer'),
 ('Senior Automation QA engineer');
 
+--Создать таблицу roles_employee
 CREATE table roles_employee(
 id_1 serial primary key,
 employee_id int not null unique,
@@ -198,42 +205,46 @@ select * from roles_employee;
 
 INSERT into roles_employee(employee_id, role_id)
 values
-(1,2),
-(2,4),
-(3,9),
-(4,13),
-(5,6),
-(6,14),
-(7,9),
-(8,13),
-(9,3),
-(10,9),
-(11,7),
-(12,2),
-(13,4),
-(14,6),
-(15,8),
-(16,10),
-(17,12),
-(18,13),
-(19,15),
-(20,1),
-(21,7),
-(22,8),
-(23,9),
-(24,10),
-(25,11),
-(26,12),
-(27,13),
-(28,14),
-(29,15),
-(30,1),
-(31,2),
-(32,3),
-(33,4),
-(34,5),
-(36,7),
-(37,8),
-(38,9),
-(39,10),
-(40,15);
+(1,20),
+(2,19),
+(3,18),
+(4,17),
+(5,16),
+(6,17),
+(7,15),
+(8,14),
+(9,13),
+(10,12),
+(11,11),
+(12,10),
+(13,9),
+(14,8),
+(15,7),
+(16,6),
+(17,5),
+(18,4),
+(19,3),
+(20,2),
+(21,1),
+(22,2),
+(23,3),
+(24,4),
+(25,5),
+(26,6),
+(27,7),
+(28,8),
+(29,9),
+(30,10),
+(31,11),
+(32,12),
+(33,13),
+(34,14),
+(35,15),
+(36,16),
+(37,17),
+(38,18),
+(39,19),
+(40,20);
+
+select now ();
+
