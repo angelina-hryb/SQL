@@ -10,7 +10,7 @@ where type = 'Printer'
 3) Найдите номер модели, объем памяти и размеры экранов ПК-блокнотов, цена которых превышает 1000 дол.
 select model,ram, screen from laptop
 where price > 1000
-4)Найдите все записи таблицы Printer для цветных принтеров.
+4) Найдите все записи таблицы Printer для цветных принтеров.
 select * from printer
 where color = 'y'
 
@@ -18,12 +18,12 @@ where color = 'y'
 select model,speed,hd from pc
 where cd in ('12x','24x') and price <600
 
-6)Для каждого производителя, выпускающего ПК-блокноты c объёмом жесткого диска не менее 10 Гбайт, найти скорости таких ПК-блокнотов. Вывод: производитель, скорость.
+6) Для каждого производителя, выпускающего ПК-блокноты c объёмом жесткого диска не менее 10 Гбайт, найти скорости таких ПК-блокнотов. Вывод: производитель, скорость.
 Select distinct maker,speed from product 
 join laptop on product.model=laptop.model
 where hd>=10
 
-Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя B (латинская буква).
+7) Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя B (латинская буква).
 SELECT product.model, laptop.price FROM laptop JOIN product ON product.model=laptop.model  
 where product.maker ='B'
 UNION
