@@ -7,46 +7,48 @@
 --1. Вывести всех работников чьи зарплаты есть в базе, вместе с зарплатами.
 select * from employees;--71
 select * from salary_2;--15
+
 select employees.employee_name, salary_2.mounthly_salary 
 from employees 
+join employee_salary on employee_salary.employee_id_1=employees.id_1
 inner join salary_2 
-on employees.id_1=salary_2.id_1;
-
---1.1
-select employees, salary_2
-from employees 
-left join salary_2 
-on employees.id_1=salary_2.id_1;
+on employee_salary.salary_id_1=salary_2.id_1;
 
 --1.2
-select employees, salary_2
-from salary_2 
-left join employees 
-on salary_2.id_1= employees.id_1;
 
+select e.employee_name, s.mounthly_salary 
+from employees e
+join employee_salary es on es.employee_id_1=e.id_1
+inner join salary_2 s
+on es.salary_id_1=s.id_1;
+--
 --1.3
-select employees, salary_2
-from employees 
-right join salary_2 
-on employees.id_1=salary_2.id_1;
+
+select employee_name , mounthly_salary 
+from employees as e
+join employee_salary as es on es.employee_id_1=e.id_1
+inner join salary_2 as s on es.salary_id_1=s.id_1;
 
 --1.4
-select employees, salary_2
-from employees 
-full outer join salary_2 
-on employees.id_1=salary_2.id_1;
+SELECT employee_name, mounthly_salary 
+FROM employee_salary 
+INNER JOIN employees ON employee_salary.employee_id_1  = employees.id_1 
+INNER JOIN salary_2 ON employee_salary.salary_id_1 = salary_2.id_1;
 
 -- 2. Вывести всех работников у которых ЗП меньше 2000.
-select employees.employee_name, salary_2.mounthly_salary 
-from employees inner join salary_2 
-on employees.id_1=salary_2.id_1
-where salary_2.mounthly_salary < 2000;
+
+select e.employee_name, s.mounthly_salary 
+from employees e 
+join  employee_salary es on es.employee_id_1 = e.id_1 
+inner join salary_2 s on  s.id_1 =es.salary_id_1 
+where s.mounthly_salary <= 2000;
 
 -- 2.1
-select employees, salary_2 
-from employees full outer join salary_2 
-on employees.id_1=salary_2.id_1
-where salary_2.mounthly_salary < 2000;
+select e.employee_name, s.mounthly_salary 
+from employees e 
+join  employee_salary es on es.employee_id_1 = e.id_1 
+inner join salary_2 s on  s.id_1 =es.salary_id_1 
+where s.mounthly_salary < 2000;
 
 --3. Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
 select  employees.employee_name, salary_2.mounthly_salary
@@ -121,6 +123,7 @@ join roles_1 on roles_1.id_1 =roles_employee.role_id
 join employee_salary on employees.id_1=employee_salary.employee_id_1 
 join salary_2 on employee_salary.salary_id_1 = salary_2.id_1 
 where roles_1.role_name like '%Junior%';
+
 -- 13. Вывести имена и зарплаты Middle специалистов
 select employees.employee_name, roles_1.role_name,salary_2.mounthly_salary
 from employees 
