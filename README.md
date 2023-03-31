@@ -136,7 +136,7 @@ SQL_HW_1.1
 </details>
 
 <details>
-<summary>Click on HW_SQL_condition_3_Joins && subquries</summary>
+<summary>Click on HW_sql_condition_3</summary>
 
 DB: подключение к той таблице где делали DDL операции
 User: подключение к тем пользователем каким делали DDL операции
