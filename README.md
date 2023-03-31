@@ -136,8 +136,7 @@ SQL_HW_1.1
 </details>
 
 <details>
-<summary>Click on HW_SQL_condition_3_Joins_subquries</summary>
-SQL HomeWork 2. Joins
+<summary>Click on HW_SQL_condition_3_Joins && subquries</summary>
 
 DB: подключение к той таблице где делали DDL операции
 User: подключение к тем пользователем каким делали DDL операции
