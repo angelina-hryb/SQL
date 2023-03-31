@@ -1,6 +1,6 @@
 ***SQL***✅
 <details>
-<summary>Click on HW_SQL condition 1</summary>  
+<summary>Click on HW_sql_condition_1</summary>  
 
 1️⃣Первая часть.   
 ▶Таблица employees  
@@ -96,7 +96,7 @@
 </details>
 
 <details>
-<summary>Click on HW_SQL condition 1.1</summary>
+<summary>Click on HW_sql_condition_2</summary>
 SQL_HW_1.1
 Создать .sql файл в котором под каждой командой напишите sql запрос который выполнит команду.
 
@@ -136,7 +136,7 @@ SQL_HW_1.1
 </details>
 
 <details>
-<summary>Click on HW_SQL condition 2 Joins</summary>
+<summary>Click on HW_SQL_condition_3_Joins_subquries</summary>
 SQL HomeWork 2. Joins
 
 DB: подключение к той таблице где делали DDL операции
